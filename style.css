@@ -1,0 +1,150 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* creating root for colors */
+:root {
+ --primary-border-color:#252525;
+}
+
+body{
+    background-color: rgb(0, 0, 0);
+    color: #ffff;
+}
+
+/* nav side bar */
+.sideBar-parent{
+    height: 100vh;
+    width: 245px;
+    border-style: none;
+    border-right: 1px solid var(--primary-border-color);
+    position: fixed;
+}
+
+.sideBar-wrapper{
+    margin-left: 30px;
+}
+
+/* font family for instagram */
+.bebas-neue-regular {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.sideBar-wrapper h1{
+    margin-top: 45px;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+/* list of items in sidebar*/
+.nav-ol, .nav-ul{
+ text-decoration: none;
+ list-style: none;
+ font-size: 16px;
+}
+
+.nav-ol li{
+   margin-top: 37px;
+   display: flex;
+   align-items: center;
+} 
+
+.nav-ol li i, .nav-ul li i{
+    margin-right: 20px;
+}
+
+/* ol svg selector */
+.x1lliihq{
+    margin-right: 20px;
+}
+
+/* unorder list in side bar */
+.nav-ul{
+    margin-top: 80px;
+}
+
+.nav-ul li{
+    margin-top: 40px;
+}
+
+/* swiper css */
+.mySwiper {
+    width:468px;
+    height: 100%;
+}
+
+.swiper-slide {
+    width: 168px !important;
+    height: 246px !important;
+}
+
+.swiper-pagination{
+    top: 20rem;
+    position: absolute;
+}
+.swiper-pagination-bullet{
+    background-color:white;
+    margin-top:20px;
+}
+/* template for slider */
+#card-Parent{
+    border: 1px solid var(--primary-border-color);
+    width:170px;
+    height: 246px;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+#card-sibling1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#card-sibling1-img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: 25px;
+    overflow:hidden;
+}
+#card-sibling1-h1{
+    font-size:14px;
+    font-weight: 300;
+    margin-top:10px;
+}
+#card-sibling1-p{
+    font-weight:400;
+    font-size:14px;
+    color: #a8a8a8;
+    margin-top:10px;
+}
+#card-sibling2{
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+    right: 0px; left: 0px;
+    border: 1px solid var(--primary-border-color);
+    border-bottom-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    height:30px; display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card-sibling2-btn1{
+    border-style: none;
+    background-color:black;
+    color: #0082f5;
+    cursor: pointer;
+}
+#card-sibling3{
+    position:absolute;
+    top: 10px;
+    right: 10px;
+    color: #7e7e7e;
+}

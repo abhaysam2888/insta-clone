@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <!-- swiper js -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+<body>
+    <!-- header started -->
+    <header>
+        <!-- nav started -->
+        <nav>
+            <!-- sideBar -->
+            <div class="sideBar-parent">
+                <div class="sideBar-wrapper">
+                    <h1 class="bebas-neue-regular">
+                        InstaGram
+                     </h1>
+                     <ol class="nav-ol">
+                         <li>
+                            <i class="fa-solid fa-house fa-xl"></i>
+                            <b>Home</b>
+                         </li>
+                         <li>
+                            <i class="fa-solid fa-magnifying-glass fa-xl"></i>
+                            Search
+                         </li>
+                         <li>
+                            <i class="fa-solid fa-compass fa-xl"></i>
+                            Explore
+                         </li>
+                         <li class="ol-flex">
+                            <svg aria-label="Reels" class="x1lliihq x1n2onr6 x5n08af" fill="currentColor" height="24" role="img" viewBox="0 0 24 24" width="24"><title>Reels</title><line fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="2" x1="2.049" x2="21.95" y1="7.002" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="13.504" x2="16.362" y1="2.001" y2="7.002"></line><line fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" x1="7.207" x2="10.002" y1="2.11" y2="7.002"></line><path d="M2 12.001v3.449c0 2.849.698 4.006 1.606 4.945.94.908 2.098 1.607 4.946 1.607h6.896c2.848 0 4.006-.699 4.946-1.607.908-.939 1.606-2.096 1.606-4.945V8.552c0-2.848-.698-4.006-1.606-4.945C19.454 2.699 18.296 2 15.448 2H8.552c-2.848 0-4.006.699-4.946 1.607C2.698 4.546 2 5.704 2 8.552Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path><path d="M9.763 17.664a.908.908 0 0 1-.454-.787V11.63a.909.909 0 0 1 1.364-.788l4.545 2.624a.909.909 0 0 1 0 1.575l-4.545 2.624a.91.91 0 0 1-.91 0Z" fill-rule="evenodd"></path></svg>
+                            <p>Reels</p>
+                         </li>
+                         <li>
+                            <i class="fa-regular fa-message fa-xl"></i>
+                            Message
+                         </li>
+                         <li>
+                            <i class="fa-regular fa-bell fa-xl"></i>
+                            Notifications
+                         </li>
+                         <li>
+                            <i class="fa-solid fa-plus fa-xl"></i>
+                            Create
+                         </li>
+                         <li>
+                            <i class="fa-regular fa-user fa-xl"></i>
+                            Profile
+                         </li>
+                     </ol>
+                     <ul class="nav-ul">
+                        <li>
+                            <i class="fa-brands fa-threads fa-xl"></i>
+                            Threads
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bars fa-xl"></i>
+                            More
+                        </li>
+                     </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- main started -->
+    <main>
+        <section>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- template for cards in slider -->
+            <template id="card-template">
+                <div id="card-Parent" class="swiper-slide">
+                    <div id="card-sibling1">
+                        <img src="https://pbs.twimg.com/card_img/1774481152767582208/J5DjD6Yh?format=jpg&name=900x900" width="74" height="74" alt="user-img" id="card-sibling1-img">
+                        <h1 id="card-sibling1-h1">Narendra Modi</h1>
+                        <p id="card-sibling1-p">New to instagram</p>
+                    </div>
+                    <div id="card-sibling2">
+                        <button id="card-sibling2-btn1">
+                            <b>Follow</b>
+                        </button>
+                    </div>
+                    <div id="card-sibling3">
+                        <i id="card-sibling3-icon" class="fa-solid fa-x"></i>
+                    </div>
+                </div>
+            </template>
+        </section>
+
+        
+    </main>
+    <footer></footer>
+</body>
+<!-- swiper js cdn -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+</html>
