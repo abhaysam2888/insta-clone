@@ -73,6 +73,12 @@ body{
 }
 
 /* swiper css */
+#swiper-heading{
+    padding-top: 20px;
+    margin-left: 35%;
+    font-size: 18px;
+}
+
 .mySwiper {
     width:468px;
     height: 100%;
@@ -83,12 +89,8 @@ body{
     height: 246px !important;
 }
 
-.swiper-pagination{
-    top: 20rem;
-    position: absolute;
-}
 .swiper-pagination-bullet{
-    background-color:white;
+    background-color:white !important;
     margin-top:20px;
 }
 /* template for slider */
@@ -147,4 +149,171 @@ body{
     top: 10px;
     right: 10px;
     color: #7e7e7e;
+}
+
+/* posts section start */
+#posts_parent{
+    margin: auto;
+    margin-top: 50px;
+    width: 468px;
+    overflow: hidden;
+}
+#posts_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+}
+#posts_head_sibling1{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#circle_icons_posts{
+    font-size:9px;
+}
+#days_posts{
+    color: #565656;
+}
+.fa-certificate{
+    color: #0082f5;
+}
+#posts_head_sibling1_img{
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#post_img{
+    border-radius: 5px;
+    width:468px ;
+    height: 100%;
+    object-fit: cover;
+}
+.post_icons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+.post_icons i{
+    font-size: 25px;
+}
+.post_icons1{
+    margin-left:-10px;
+}
+.post_icons1 i{
+    margin-left: 10px;
+}
+.posts_likes{
+    margin-top: 20px;
+}
+
+/* login hmtl page */
+.formParent{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.formContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--primary-border-color);
+    width: 350px;
+    height: 406px;
+}
+.icons-svg1{
+    margin:50px 0px 50px 0px;
+    width: 174px;
+    height: 50px;
+}
+.formInputs{
+    display: flex;
+    flex-direction: column;
+}
+.formInputs input{
+    border-style: none;
+    background-color:#000;
+    padding:0px 20px 0px 20px;
+    width: 258px;
+    height: 36px;
+    color: #7e7e7e;
+    margin-top: 10px;
+    border: 1px solid var(--primary-border-color);
+}
+.formInputs input::placeholder{
+    color:#fafafa;
+    font-size: 13px;
+}
+.formInputs button{
+    margin-top: 10px;
+    height: 36px;
+    background-color: #0082f5;
+    border: 1px solid var(--primary-border-color);
+    border-radius:10px;
+    color: white;
+    cursor: pointer;
+}
+.hr_elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hr_elements p{
+    margin: 0px 10px 0px 10px;
+}
+.hr_elements hr{
+    width:100px;
+    border:1px solid var(--primary-border-color);
+}
+.links{
+    display: flex;
+    justify-content:center;
+    margin-top:30px;
+    align-items: center;
+}
+.links i{
+    margin-right: 10px;
+    color: #0082f5;
+}
+.links p{
+    color: #0082f5;
+}
+.forgetText{
+    color: #9b9b9b;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.form2{
+    margin-top:10px;
+    width:350px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid var(--primary-border-color);
+    height:65px;
+}
+.form2Span{
+    color: #0082f5;
+    margin-left: 10px;
+}
+.getApp{
+    margin-top: 20px;
+}
+.flex_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex_img img{
+    width: 135px;
+    height: 40px;
+    margin:20px 0px 0px 20px;
+
 }

@@ -63,17 +63,39 @@ let arrOfCards = [
 ]
 
 // making loop of cards
-let loop = () => {
-    
-    arrOfCards.forEach((item) => {
+
+    function displayItem() {
+        arrOfCards.forEach((item, index) => {
         let card_template = document.querySelector('#card-template')
         let parentToAppend = document.querySelector('.swiper-wrapper')
         let clone = card_template.content.cloneNode(true)
-        // let image = clone.querySelector('#card-sibling1-img')
-        // let headingName = clone.querySelector('#card-sibling1-h1')
-        // let paraRole = clone.querySelector('#card-sibling1-p')
+            
+        fillingData(item, clone, index)
         parentToAppend.appendChild(clone)
+        })
+    }
+
+    displayItem()
+
+    // filling data in cards
+function fillingData(item, clone, index) {
+    let image = clone.querySelector('#card-sibling1-img')
+    let headingName = clone.querySelector('#card-sibling1-h1')
+    let paraRole = clone.querySelector('#card-sibling1-p')
+    
+    image.src = item.img
+    headingName.textContent = item.name
+    paraRole.textContent = item.role
+    deleteItems(clone, index)
+}
+
+// delete items in cards
+function deleteItems(clone, index) {
+    let crossIcon = clone.querySelector('#card-sibling3')
+    crossIcon.addEventListener('click', () => {
+        arrOfCards.splice(index, 1)
+        let parentToAppend = document.querySelector('.swiper-wrapper')
+        parentToAppend.innerHTML = ""
+        displayItem()
     })
 }
-loop()
-
